@@ -1,0 +1,52 @@
+.route-link {
+    margin-right: 920px;
+    margin-bottom: 10px;
+    color: grey
+}
+
+.Wishlist {
+    width: 900px;
+    height: 207px;
+    border: solid 2px rgb(119, 113, 113);
+    margin-left: 250px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+}
+
+.list-title {
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border: solid 2px rgb(119, 113, 113);
+    border-radius: 1px;
+    opacity: 1;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    font-variant: normal;
+    font-style: initial;
+    /* border-style:dotted; */
+    /* color: ; */
+}
+
+.delte-button {
+    margin-left: "25px";
+}
+
+.style-adjust {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 22px;
+}
+
+.bookdetails {
+    background-color: red;
+}
+
+.myfooter {
+    margin-top: -342px;
+}
+.circledesign {
+    background-color: #B90136;
+    width: 100px;
+    height: 100px;
+    clip-path: circle();
+}

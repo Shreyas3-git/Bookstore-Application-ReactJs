@@ -1,0 +1,56 @@
+.route-link {
+    margin-right: 920px;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.titlename {
+    margin-right: 700px;
+}
+
+.person-title {
+    font-size: x-large;
+    font-weight: bold;
+    color: #0A0102;    
+}
+
+.update {
+    margin-left: 20px;
+    color: brown;
+    font-weight: bold;
+}
+
+.address-details {
+    margin-top: 50px;
+    margin-right: 430px;
+}
+
+.workaddress {
+    margin-right: 825px;
+}
+
+.adjustColoum {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 300px;
+}
+
+.textAdjust {
+    margin-left: -75px;
+}
+
+.rowArrangement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 300px;   
+}
+
+.footerMargin {
+    margin-top: -650px;
+}
+
+.profile {
+    color: grey;
+}

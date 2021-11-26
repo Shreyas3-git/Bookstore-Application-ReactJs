@@ -1,0 +1,53 @@
+.mainContainer {
+    margin-top: 180px;
+   
+    background-color: gainsboro;
+}
+
+.Container {
+   /* padding-top: 100px; */
+   background-color: gainsboro;
+}
+.header-title {
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 25%;
+    
+}
+
+.dialog-div {
+    margin-top: -120px;
+}
+
+.comment {
+    font-size: xx-small;
+}
+
+.bookIcon {
+    padding-top: 50px;
+    size: 12ch;
+    height: 70px;
+    width: 120px;
+}
+
+.logoadjust{
+    padding-left: 50px;
+}
+
+.userLogo {
+    align-items: center;
+    height: 30px;
+    width: 50px;
+}
+
+.dialog-div {
+    background-color: gainsboro;
+}
+
+.footerAdjust {
+    margin-top: -438px;
+}
+.commment {
+    font-style: italic;
+    
+}

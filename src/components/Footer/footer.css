@@ -1,0 +1,26 @@
+.footerContainer {
+    background-color: black;
+    display: flex;
+    align-content: flex-end;
+    width: 100vw;
+    min-height: 8vh;
+    position:static;
+    /* padding-left: 50%; */
+    bottom: 0;
+    margin-top: 5px;
+    margin-top: 663px;
+}
+
+.footerContent {
+    width: 100%;
+    color: #FFFFFF;
+    font: normal normal medium 13px/15px 'Lato';
+    margin-top: 15px;
+    margin-right: 550px;
+    align-items: center;
+}
+.body{
+    padding: auto;
+    margin-left: 0%;
+ 
+}

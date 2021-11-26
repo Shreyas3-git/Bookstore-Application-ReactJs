@@ -1,0 +1,91 @@
+
+.parent {
+    margin-top: -50px;
+}
+
+.table-border {
+    margin-left: 215px;
+}
+.book-table {
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    /* border : solid 4px purple */
+    margin-top: -300px;
+    margin-left: 200px;
+}
+
+.title-container {
+    width:50px;
+    font-size: 20px;
+    transform: scale(1.1);
+    padding-left: 45px;
+    color: black;
+    /* margin-left: 100px; */
+}
+
+.booklist {
+    margin-top: -5px;
+    width: 80px;
+    font-size:large; 
+    font-weight: lighter;  
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    padding-left: 1px;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+}
+
+.margin-setter {
+    margin-top: 30px;
+    margin-left: 10px;
+    /* item margin  */
+}
+
+.tablesort {
+    width: 60px;
+    padding-left: 630px;
+    transform: scale(1.4); 
+    padding-right: 0px  ;
+    position: absolute;
+    top: 90px;
+    /* margin-right: 500px; */
+}
+
+
+.table-borderless {
+    margin-top: -10px;
+
+}
+
+.bookContainer {
+    top: 146px;
+    width: 233px;
+    height: 250px;
+    margin-left: 190px;
+    background-color: #FFFFFF 0% 0% no-repeat padding-box;
+
+}
+
+.backgroundbook {
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 2px 2px 0px 0px;
+    opacity: 1;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.row-arrange {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+       
+}
+
+ 

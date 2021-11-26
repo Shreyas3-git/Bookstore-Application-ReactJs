@@ -1,0 +1,182 @@
+
+.appbar-section {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    height: 60px;
+    width: 880px;
+    padding-right: 20px;
+}
+
+.leftOptions{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: white;
+    /* margin-right: 435px; */
+    padding-right:  50px;
+}
+
+.titleLogo {
+    margin-top: 4px;
+    margin-right: 29px;
+    width: 18px;
+    transform: scale(1.7);    
+}
+
+.titleName {
+    font-size: 10px;
+    transform:scale(1.5);
+}
+
+.search {
+    position: relative;
+    align-items: center;
+    border-radius:2px;  
+    background-color: #ffff; 
+    display: flex-start;
+    justify-content: flex-start;
+    color: grey; 
+    height: 20px;
+    margin-right: 25px;
+    margin-left: 15px;
+    width: 100%;
+    font-size: 8px;
+    transform:scale(1.1);
+    padding-right: 135px;
+    padding-top: 10px;
+        
+}
+
+.searchIcon  {
+    padding : 0px 2px;
+    height: 20px;
+    /* width: 10px; */
+    color: grey;
+    /* position: absolute; */
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -5px;
+
+}
+.icon-style {
+    width: 4px;
+    transform:scale(0.7);
+    margin-bottom: 7px;
+}
+.textInput {
+    padding: 1px 1px 1px 0px;
+    padding-left: 0px;
+    padding-right: 10px;
+    /* transition: width; */
+    width: 100%;
+    font-size: xx-small;
+    width: 20ch;
+    transform: scale(0.9);
+    margin-bottom: 7px;
+
+}
+
+.rightOptions {
+    display: flex;
+    align-items: center;
+    color: #ffff;
+}
+
+.display-column {
+     display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: -2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.shoppingIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;    
+    color: #ffff;
+    margin-right: 0px;   
+}
+
+.profileIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;    
+    color: #ffff;
+    margin-left: -5px;
+
+
+}
+
+.cartButton {
+    font-size: "6px";
+
+}
+
+.profileButton {
+    font-size: 6px;    
+    display: flex;
+
+}
+
+.profile-text {
+    color: #fff;
+    transform: scale(0.5);
+    /* padding-left: -25px; */
+    margin-right: 20px;
+}
+
+.Container .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: brown;
+}
+
+.alignContent {
+    padding-left: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;      
+}
+
+.userProfileIcon {
+    width: 12px;
+    color: grey;
+
+}
+
+.alignIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.buttonAlign {
+    margin-top: -15px;
+    margin-left: 150px;
+
+}
