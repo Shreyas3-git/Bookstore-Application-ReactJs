@@ -6,12 +6,17 @@ import { Button } from '@material-ui/core';
 import { BrowserRouter as Link } from 'react-router-dom';
 import HeaderBar from '../AppHeader/headerbar';
 import Footer from '../Footer/Footer';
+import { useHistory } from 'react-router-dom';
+
 export default function OrderStatus() {
+
+    let history = useHistory();
+
     return (
         <>
         <HeaderBar />
-        <div className="Container">
-            <img src={firework} alt="" style={{width:"200px"}}/>
+        <div className="myContainer">
+            <img src={firework} alt="" style={{width:"200px",paddingBottom:"30px"}}/>
             <div className="labelMessage">
                 <h2 >Order Placed Successfully... (:</h2>
             </div>
@@ -41,7 +46,7 @@ export default function OrderStatus() {
 
             </table>
                 <div className="button">
-                <Button color="primary" variant="contained" >Continue Shopping</Button> &nbsp;&nbsp;
+                   <Button onClick={() => {history.push('/book-list')}}>Continue Shopping</Button> 
                 </div>
             </div>
             <div className="myfooter">

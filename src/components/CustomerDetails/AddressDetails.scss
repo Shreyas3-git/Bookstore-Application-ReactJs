@@ -1,0 +1,79 @@
+.Address-Name {
+    font-weight: 600;
+  }
+  .Address-box {
+    margin-left:65%;
+    width: 110px;
+    display: flex;
+    height: 21px;
+    border: 1px solid rgb(197, 46, 46);
+    font-size:12px;
+    text-align: center;
+    margin-top: -23px
+    ;
+    
+}
+  .Address-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .Address-namess{
+    margin-left:6%;
+    color: rgb(197, 46, 46);
+  }
+  
+  .card-style {
+    width: 45rem;
+    margin-left: 70px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .customer-name {
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .customer-firstname {
+    display: inline-grid;
+  }
+  .customer-lastname {
+    display: inline-grid;
+    margin-left: 30%;
+  }
+  .work-address {
+    margin-top: 20px;
+  }
+  .edit-class {
+    color: red;
+    font-size: 14px;
+  }
+  .custom-address {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .text-area {
+    width: 77%;
+  }
+  .town-value {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+  }
+  .state-values {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    margin-left: 35px;
+  }
+  .address-fileds {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .cart-style2-customer {
+    margin-top: 20px;
+    width: 45rem !important;
+    height: auto !important;
+  }

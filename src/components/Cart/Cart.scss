@@ -1,0 +1,138 @@
+.header{
+  font-size: 13px;
+  margin-right: 1270px;
+}
+
+.alignElement {
+  margin-right: 1300px;
+}
+
+.Cart-Name {
+    font-weight: 600;
+  }
+  .location-box {
+    margin-left: 60%;
+    width: 60px;
+    display: flex;
+    height: 27px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .cart-header {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .cart-style {
+    width: 45rem !important;
+    height: 300px !important;
+  }
+  .cart-style2 {
+    margin-top: 20px;
+    width: 45rem !important;
+    height: 50px !important;
+  }
+  .card-images {
+    width: 25%;
+    height: 72px;
+  }
+  .cart-second-body {
+    display: inline-flex;
+    margin-top: 20px;
+  }
+  .cart-details {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .book-name {
+    font-weight: 400;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+  }
+  .book-namess {
+    font-weight: 400;
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+  }
+  .book-aurthor {
+    color: #8f94a7;
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .book-cost {
+    font-weight: 600;
+    font-family: 'Helvetica Neue';
+    font-size: 18px;
+  }
+  .cut-cost {
+    color: #8f94a7;
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .minus {
+    margin-left: 0px !important;
+  }
+  .circle.plus:before,
+  .circle.plus:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #191818;
+  }
+  .circle.plus:before {
+    width: 2px;
+    margin: 2px auto;
+  }
+  .circle.plus:after {
+    margin: auto 2px;
+    height: 2px;
+  }
+  .book-buttons {
+    display: flex;
+    margin-top: 20px;
+  }
+  .cart-amount {
+    width: 60px;
+    text-align: center;
+    height: 27px;
+    margin: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .place-order {
+    margin-left: 78%;
+    margin-top: 40px;
+    position: absolute;
+  }
+  .circle.minus:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #191818;
+    margin: auto 2px;
+    height: 2px;
+  }
+  .imagestyle {
+    width: 19rem;
+    margin-left: 70px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

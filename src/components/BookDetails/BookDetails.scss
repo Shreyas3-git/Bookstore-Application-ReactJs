@@ -1,0 +1,143 @@
+.cart-details-out {
+    border: 1px solid black;
+    width: 356px;
+    height: 422px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .cart-det-img {
+    height: 88%;
+    width: 100%;
+    padding: 0px 24px;
+  }
+  .cart-end {
+    display: flex;
+    flex-direction: row;
+    width: 356px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .notify {
+    padding: 5px 40px;
+    background-color: rgb(84, 8, 8);
+    color: #ffffff;
+    border-color: rgb(84, 8, 8);
+  }
+  .wishlist {
+    padding: 5px 40px;
+    background-color: rgb(29, 18, 18);
+    color: #ffffff;
+    border-color: rgb(29, 18, 18);
+  }
+  .cart-main {
+    margin-left: 200px;
+  }
+  .cart-divide {
+    display: flex;
+    flex-direction: row;
+  }
+  .cart-part2 {
+    margin-left: 50px;
+  }
+  .dummies {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  .dummies2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  .cart-button {
+    margin-left: 73%;
+    color: #ffffff;
+    background-color: rgb(113, 113, 177);
+  }
+  .cart-textarea {
+    display: flex;
+  }
+  .cart-last-data {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .subheader {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(111, 95, 95);
+  }
+  .subheader2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(111, 95, 95);
+    margin-left: 10px;
+  }
+  .subheader4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(111, 95, 95);
+    margin-top: 5px;
+  }
+  .array-map {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .array-map-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .circle2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-name {
+    margin-top: 10px;
+  }
+  .solid-line {
+    border: solid black;
+    width: 80%;
+  }
+  .solid-line2 {
+    border: solid black;
+    margin-top: 30px;
+    width: 80%;
+  }
+  .subheader3 {
+    width: 80%;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(29, 24, 24);
+  }
+  .mybookdetails {
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(111, 95, 95);
+  }
+  .points {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    color: #ffffff;
+    background: rgb(16, 100, 16);
+    padding: 5px 0px 5px 5px;
+  }
+  .points-1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aadjust-footer {
+    margin-top: -600px;
+  }

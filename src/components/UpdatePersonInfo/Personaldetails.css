@@ -1,4 +1,5 @@
 .route-link {
+    margin-top: 100px;
     margin-right: 920px;
     margin-bottom: 10px;
     color: grey;
@@ -34,6 +35,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     margin-left: 300px;
+    margin-top: 20px;
 }
 
 .textAdjust {

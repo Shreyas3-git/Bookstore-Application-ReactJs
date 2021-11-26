@@ -15,3 +15,13 @@ exports.LowToHigh = () => {
     const _url = "/ascending";
     return httpService.sortHighToLow(_url);
 }
+
+exports.addBook = (book) => {
+    const _url = "/addBook";
+    let httpHeader = {
+        Headers : {
+            'Content-Type' : 'application/json'
+        } 
+    }
+    return httpService.additem();
+}

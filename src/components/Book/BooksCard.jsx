@@ -1,4 +1,3 @@
-
 import {React,useState,useEffect} from 'react';
 import HeaderBar from '../AppHeader/headerbar';
 import Books from '../Booklist/books.css';
@@ -11,10 +10,10 @@ import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-
 import bookImage from '../assets/bookImage.png';
 import '../Book/BooksCard.css';
 import Footer from '../Footer/Footer';
+import { useHistory } from 'react-router-dom';
 const httpService = require('../Service/BookService/Book');
 // import '../Service/BookServices/BooksService';
 
@@ -35,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BooksCard() {
   
+  let history = useHistory();
   const classes = useStyles();
   const[bookData,setBookData] = useState([]);
   const[select,setSelect] = useState('');
@@ -137,12 +137,8 @@ export default function BooksCard() {
         <div className="bookContainer">
           <AppBar />
             <Container style={{
-                // display:"flex",
-                // flexDirection:"row",
-                // flexWrap:"nowrap"
+                marginTop:"30px"
             }}>
-              {/* <Row>
-                <Col> */}
               <Grid spacing={5} style={{
                     display:"flex",
                     flexDirection:"row",
@@ -167,16 +163,16 @@ export default function BooksCard() {
                     //   width: 320,
                     // }}
                     style={{
-                        marginLeft: "50px"
+                        marginLeft: "35px"
                     }}
                   >
                    
                      <div className="backgroundbook">
-                     <CardMedia 
+                     <CardMedia onClick={() => {(history.push('/book-details'))}} 
                      image={bookImage}
                      alt="book don't make me think" 
                      style={{
-                       marginLeft: "45px",
+                       marginLeft: "40px",
                        justifyContent:"center",
                        height:"110px",
                        width:"90px",                    
@@ -192,7 +188,7 @@ export default function BooksCard() {
                            letterSpacing: "0px",
                            color: "#0A0102",
                            opacity: 1,
-                           paddingLeft:"15px",
+                           paddingLeft:"-25px",
                          }}>{book.bookName}</Typography>
                            <Typography
                            style={{

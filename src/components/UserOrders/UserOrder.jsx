@@ -1,7 +1,7 @@
 
 import React from 'react';
 import '../Wishlist/Wishlist.css';
-import bookImage from '../assets/bookImage.png';
+import steveKrug from '../assets/steveKrug.png';
 import Card from '@material-ui/core/Card';
 import { CardContent, CardMedia, Typography } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -30,7 +30,7 @@ export default function Wishlist() {
                                 marginTop : "35px",
                             }}
                             component="img"
-                            image={bookImage}
+                            image={steveKrug}
                             alt=""/>
                             <div className="circledesign">
                             <Typography style={{

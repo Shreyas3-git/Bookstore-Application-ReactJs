@@ -63,9 +63,9 @@ export default function BasicTabs() {
       <TabPanel value={value} index={0}>
         {/* Item Two  Content data require here */}   
               <AccountCircleSharpIcon style={{
-                  height:"50px",
+                  height:"70px",
                   width:"100px",
-                  marginLeft:"110px"
+                  marginLeft:"200px"
               }}/><br/><br/>     
               <FormLabel component="legend">Email</FormLabel>
               <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined"></TextField>
@@ -81,7 +81,7 @@ export default function BasicTabs() {
         <AccountCircleSharpIcon style={{
                   height:"70px",
                   width:"100px",
-                  marginLeft:"80px"
+                  marginLeft:"200px"
               }}/><br/><br/>     
         <FormLabel component="legend">FullName</FormLabel>
                         <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined"></TextField>                        

@@ -21,7 +21,7 @@ export default function Personaldetails() {
                 <label className="person-title">Personal Details</label>
                 <label className="update">Edit</label>
                 <FormLabel component="legend" style={{
-                    marginRight: '150px',
+                    marginLeft: '-70px',
                     marginTop: '20px'
                     }}>Full Name</FormLabel>
                 <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
@@ -29,21 +29,21 @@ export default function Personaldetails() {
                       width: '500px' 
                 }}/>
                 <FormLabel component="legend" style={{
-                    marginRight: '180px',
+                    marginLeft: '-80px',
                     }}>Email</FormLabel>
                 <TextField type="email" fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
                       marginLeft: '270px',
                       width: '500px' 
                 }}/>
                 <FormLabel component="legend" style={{
-                    marginRight: '150px',
+                    marginLeft: '-70px',
                     }}>Password</FormLabel>
                 <TextField type="password" fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
                       marginLeft: '270px',
                       width: '500px' 
                 }}/>
                 <FormLabel component="legend" style={{
-                    marginRight: '110px',
+                    marginLeft: '-50px',
                     }}>Mobile Number</FormLabel>
                 <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
                       marginLeft: '270px',
@@ -60,7 +60,7 @@ export default function Personaldetails() {
                   <label className="person-title">Work</label> 
                   <label className="update">Edit</label>
                   <FormLabel component="legend" style={{
-                    marginRight: '40px',
+                      marginLeft:"-10px",
                     marginTop: '20px'                    
                     }}>Address</FormLabel>
                 
@@ -71,17 +71,18 @@ export default function Personaldetails() {
 
                 <div className="adjustColoum">
                     <FormLabel component="legend" style={{
-                        // marginRight: '36px',   
+                            paddingBottom:"20px",
                         }}>City/Town</FormLabel>
                     <div className="textAdjust">
                         <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
                             marginLeft: '5px',
-                            width: '230px' 
+                            width: '230px',
+                         
                         }}/>
                     </div>                    
                     <FormLabel component="legend" style={{
                         marginLeft: '50px',
-
+                        paddingBottom:"10px"
                         }}>State</FormLabel>
                     <div className="textAdjust">
                         <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
@@ -92,7 +93,7 @@ export default function Personaldetails() {
                 </div>    
                 <div className="row-content">
                         <FormLabel component="legend" className="label text" style={{
-                            marginRight:'50px'
+                            marginLeft:'-30px'
                         }}>Type</FormLabel>
                             <RadioGroup className="radio-group" name="gender" >
                                 <div className="rowArrangement"> 

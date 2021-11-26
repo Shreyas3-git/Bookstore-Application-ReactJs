@@ -11,12 +11,12 @@
 .header-title {
     font-weight: bolder;
     font-size: xx-large;
-    margin-bottom: 25%;
+    margin-bottom: -20px;
     
 }
 
 .dialog-div {
-    margin-top: -120px;
+    margin-top: -141px;
 }
 
 .comment {

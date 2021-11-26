@@ -27,7 +27,7 @@ export default function ResetPassword() {
                     <AccountCircleSharpIcon style={{
                         height:"70px",
                         width:"100px",
-                        marginLeft:"60px"
+                        marginLeft:"200px"
                     }}/>
                         <form>
                         <FormLabel component="legend" style={{fontWeight:"bold"}}>Email</FormLabel>

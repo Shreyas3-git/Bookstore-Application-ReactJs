@@ -10,22 +10,12 @@ import ResetPassword from './components/Forgot_Password/ResetPassword';
 import UserOrder from './components/UserOrders/UserOrder';
 import Personaldetails from './components/UpdatePersonInfo/Personaldetails';
 import {BrowserRouter, BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import BookDetails from './components/BookDetails/BookDetails';
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (
     <div className="App">
-     
-          {/* <HeaderBar /> */}
-
-              {/* <BooksCard /> */}
-              {/* <UserSignUp /> */}
-              {/* <ResetPassword /> */}
-              {/* <OrderStatus /> */}
-              {/* <Wishlist /> */}
-              {/* <UserOrder /> */}
-              {/* <Personaldetails /> */}
-          {/* <Footer /> */}
-
           <BrowserRouter>
               <Switch>
                   <Route path="/" exact component={UserSignUp}></Route>
@@ -35,6 +25,8 @@ function App() {
                   <Route path="/user-wishlist" exact component={Wishlist}></Route>
                   <Route path="/user-orders" exact component={UserOrder}></Route>
                   <Route path="/user-details" exact component={Personaldetails}></Route>
+                  <Route path="/book-details" exact component={BookDetails}></Route>
+                  <Route path="/cart-items" exact component={Cart}></Route>
               </Switch>
           </BrowserRouter>
     </div>
