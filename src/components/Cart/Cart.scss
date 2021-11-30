@@ -5,6 +5,7 @@
 
 .alignElement {
   margin-right: 1300px;
+  margin-top: 100px;
 }
 
 .Cart-Name {
@@ -32,20 +33,21 @@
     height: 50px !important;
   }
   .card-images {
-    width: 25%;
+    width: 100px;
     height: 72px;
   }
   .cart-second-body {
     display: inline-flex;
     margin-top: 20px;
+    margin-right: 400px;
   }
   .cart-details {
-    margin-left: 30px;
-    display: flex;
+    text-align: left;
+    padding: 10px;
     flex-direction: column;
   }
   .book-name {
-    font-weight: 400;
+    font-weight: bold;
     font-family: 'Helvetica Neue';
     font-size: 18px;
   }
@@ -57,19 +59,22 @@
   .book-aurthor {
     color: #8f94a7;
     font-family: 'Helvetica Neue';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
   }
-  .book-cost {
+  .cost-section {
     font-weight: 600;
     font-family: 'Helvetica Neue';
     font-size: 18px;
+    flex-direction: column;
+
   }
   .cut-cost {
     color: #8f94a7;
     font-family: 'Helvetica Neue';
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 10px;
+    text-decoration: line-through;
   }
   .circle {
     width: 25px;
@@ -114,9 +119,12 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
   }
   .place-order {
-    margin-left: 78%;
-    margin-top: 40px;
+    // margin-bottom: 90px;
     position: absolute;
+    // margin-left: 400px;
+    bottom: 10px;
+    right: 10px;
+      
   }
   .circle.minus:before {
     content: '';

@@ -5,11 +5,11 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import Userlogin from './UserSignUp';
 import TextField from '@material-ui/core/TextField';
 import FormLabel from '@material-ui/core/FormLabel';
 import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';
-import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import {BrowserRouter as Router,Link} from 'react-router-dom';
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -74,6 +74,7 @@ export default function BasicTabs() {
               <Router>
                   <a href="/forgotPassword" component={Link} exact to="/forgotPassword">Forgot Password?</a> 
               </Router>              
+              
         <br/>
       </TabPanel>
       <TabPanel value={value} index={1}>
@@ -91,7 +92,6 @@ export default function BasicTabs() {
                         <TextField type="password"fullWidth margin="normal" size="small" color="primary" variant="outlined"/>
                         <FormLabel component="legend">Mobile Number</FormLabel>
                         <TextField type="password"fullWidth margin="normal" size="small" color="primary" variant="outlined"/>
-
       </TabPanel>
     </Box>
   );

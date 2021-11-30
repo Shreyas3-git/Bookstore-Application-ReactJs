@@ -1,18 +1,22 @@
-import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import {React,useState} from 'react';
+import {useHistory} from 'react-router-dom';
+import { Card } from 'react-bootstrap';
+import {Button} from '@material-ui/core';
 import '../CustomerDetails/AddressDetails.scss';
 import OrderSummary from '../OrderSummary/OrderSummary';
 
-class AddressDetails extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { btnValue: false };
-    }
+export default function AddressDetails(props) {
 
-    handleChange = () => {
-        this.setState({ btnValue: true });
+    let history = useHistory();
+    const bookData = (history.location.state);
+    const[btnValue,setBtnValue] = useState(false);
+    const[show,setShow] = useState(false);
+    
+    const handleChange = () => {
+        setBtnValue(true);
+        setShow(true);
     };
-    render() {
+
         return (
             <div>
                 <Card className='card-style'>
@@ -45,28 +49,27 @@ class AddressDetails extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            {!this.state.btnValue && (
+                            {!btnValue && (
                                 <div className='work-address'>
-                                    <div>
-                                        <input type='radio' value='Male' name='gender' />
-                                        <b>2.HOME</b>
+                                    <div className="address-type">
+                                        {/* <b>Type</b> */}
                                     </div>
-                                    <div>
-                                        <label style={{ marginLeft: '15px' }}>Address</label>
-                                        <p style={{ marginLeft: '15px' }}>hello</p>
+                                    <div className="radio-button">
+                                        <br/>
+                                        {/* <input type="radio">Work</input>
+                                        <input type="radio">Home</input>
+                                        <input type="radio">Other</input> */}
                                     </div>
                                 </div>
                             )}
 
                         </Card.Text>
-                        {!this.state.btnValue && (
-                            <Button style={{ float: 'right' }} onClick={this.handleChange}>
-                                CONTINUE
-                            </Button>
+                        {!btnValue && (
+                            <Button color="primary" variant="contained" style={{ float: 'right' }} onClick={handleChange}>CONTINUE</Button>
                         )}
                     </Card.Body>
                 </Card>
-                {this.props.show && !this.state.btnValue ? (
+                {show && !btnValue ? (
                     <Card className='imagestyle cart-style2'>
                         <Card.Body>
                             <Card.Text>Order Summary</Card.Text>
@@ -80,5 +83,3 @@ class AddressDetails extends React.Component {
         );
     }
 
-}
-export default AddressDetails;

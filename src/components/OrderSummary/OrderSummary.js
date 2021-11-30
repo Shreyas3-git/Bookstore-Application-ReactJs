@@ -1,30 +1,29 @@
-import React from 'react';
+import {React, useState} from 'react';
+import { useHistory } from 'react-router';
 import { Card } from 'react-bootstrap';
 import bookImage from '../assets/bookImage.png';
 import { BrowserRouter as route, Link } from 'react-router-dom';
 import {Button} from '@material-ui/core';
-import { useHistory } from 'react-router';
 import '../Cart/Cart';
 import Footer from '../Footer/Footer';
 
-class OrderSummary extends React.Component {
+export default function OrderSummary(props){
 
-    constructor(props) {
-        super(props);
-        this.state = { value: 1, show: false, btnValue: false, };
+    const history = useHistory();
+    const bookData = (history.location.state);
+    const [btnValue,setBtnValue] = useState(false);
+    const [show,setShow] = useState(false);
+    
+    console.log("Book data from AddressDetails page to OrderSummary page ---->",bookData);
 
+
+    const handleClick = () => {
+        setBtnValue(true);
+        setShow(true);    
     }
     
-    handleClick = () => {
-        this.setState({
-            show: true,
-            btnValue: true,
-
-        });
-    }
 
 
-    render() {
         return (
             <>
             <Card className='imagestyle cart-style'>
@@ -40,16 +39,18 @@ class OrderSummary extends React.Component {
                                 <Card.Img src={bookImage} className='ss' />
                             </div>
                             <div className='cart-details'>
-                                <span className='book-name'>Dont make me think</span>
-                                <span className='book-aurthor'>canon doyle</span>
-                                <span className='book-cost'>
-                                    Rs. 1500 <s className='cut-cost'>Rs. 2000</s>
+                                <span className='book-name'>{bookData.bookName}</span><br/>
+                                <span className='book-aurthor'>{bookData.bookAuthor}</span><br/>
+                                <span className='cost-section'>
+                                    Rs. {bookData.bookPrice}/- <s className='cut-cost'>Rs. {bookData.priceWithoutDiscount}/-</s>
                                 </span>
 
                             </div>
                         </div>
                         <div className='place-order'>
-                            <a href="/order-status" Component={Link} to="/order-status">Checkout</a>
+                            <Button onClick={() => {(history.push('/order-status'))}} color="secondary" variant="contained" style={{
+                                marginBottom:"20px",
+                            }}></Button>
                         </div>
                     </Card.Text>
                 </Card.Body>
@@ -60,5 +61,3 @@ class OrderSummary extends React.Component {
             </>
         )
     }
-}
-export default OrderSummary

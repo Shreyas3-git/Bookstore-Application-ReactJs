@@ -53,6 +53,18 @@
     flex-direction: column;
     margin-left: 15px;
   }
+
+  .address-type {
+    margin-right: 620px;
+
+  }
+
+  .radio-button {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+  }
+
   .text-area {
     width: 77%;
   }

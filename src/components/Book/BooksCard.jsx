@@ -35,12 +35,23 @@ const useStyles = makeStyles((theme) => ({
 export default function BooksCard() {
   
   let history = useHistory();
+  console.log("history hook --->",history);
   const classes = useStyles();
   const[bookData,setBookData] = useState([]);
   const[select,setSelect] = useState('');
   
   const handleChange = (event) => {
     setSelect(event.target.value);
+  }
+
+  const newestArrival = () => {
+    httpService.getListOfBooks().then(response => {
+      console.log(response.data.data);
+      setBookData(response.data.data);
+      console.log("use history containing all the data--->");
+    }).catch(error => {
+      console.log(error)
+    })  
   }
 
   useEffect(() => {
@@ -68,7 +79,7 @@ export default function BooksCard() {
         })
    }   
 
-
+   
   return (
         <>  
             <div>
@@ -123,7 +134,7 @@ export default function BooksCard() {
                   </MenuItem>
                   <MenuItem value="low to high" onClick={sortBooksAscendingOrder}>Price: Low To High</MenuItem>
                   <MenuItem value="high to low" onClick={sortBooksDecendingOrder}>Price: High To Low</MenuItem>
-                  <MenuItem value="newest arrival">Newest Arrival</MenuItem>
+                  <MenuItem value="newest arrival" onClick={newestArrival}>Newest Arrival</MenuItem>
                 </Select>
               </FormControl>
 
@@ -168,7 +179,7 @@ export default function BooksCard() {
                   >
                    
                      <div className="backgroundbook">
-                     <CardMedia onClick={() => {(history.push('/book-details'))}} 
+                     <CardMedia onClick={() => {(history.push('/book-details',book))}} 
                      image={bookImage}
                      alt="book don't make me think" 
                      style={{

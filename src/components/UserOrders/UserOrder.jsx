@@ -11,6 +11,7 @@ import Footer from '../Footer/Footer';
 import {BrowserRouter as Link} from 'react-router-dom';
 
 export default function Wishlist() {
+
     return (
         <div>
             <HeaderBar />

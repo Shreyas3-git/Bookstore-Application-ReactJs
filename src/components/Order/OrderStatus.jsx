@@ -46,7 +46,8 @@ export default function OrderStatus() {
 
             </table>
                 <div className="button">
-                   <Button onClick={() => {history.push('/book-list')}}>Continue Shopping</Button> 
+                   <Button onClick={() => {history.push('/book-list',{id:7,color:"purple"})}} color="primary" variant="contained">Continue Shopping</Button> 
+                    
                 </div>
             </div>
             <div className="myfooter">

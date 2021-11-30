@@ -1,23 +1,13 @@
-
-import { DialogContent, DialogTitle, FormLabel, TextField } from '@material-ui/core';
+import { DialogContent } from '@material-ui/core';
 import {React,useState} from 'react';
 import { Dialog } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import { DialogActions } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
 import TabPanel from './TabPanel';
-// import TabContext from '@material-ui/core/TabContext';
-// import TabList from '@material-ui/core/TabList';
-// import TabPanel from '@material-ui/TabPanel';
 import '../LoginSignup/Pagestyle.css';
-import logo from '../assets/logo.png';
 import BookIcon from '@material-ui/icons/Book';
 import HeaderBar from '../AppHeader/headerbar';
 import Footer from '../Footer/Footer';
-// import { Badge } from '@material-ui/core';
-// import { withStyles } from '@material-ui/styles';
 
 
 export default function UserSignUp() {
@@ -55,21 +45,10 @@ export default function UserSignUp() {
     
                 <DialogContent>
                     <TabPanel value={value} index={1}/>
-                <form>
-                        
-                        {/* <FormLabel component="legend">FullName</FormLabel>
-                        <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined"></TextField>                        
-                        <FormLabel component="legend">Email</FormLabel>
-                        <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined"></TextField>
-                        <FormLabel component="legend">Password</FormLabel>
-                        <TextField type="password"fullWidth margin="normal" size="small" color="primary" variant="outlined"/>
-                        <FormLabel component="legend">Mobile Number</FormLabel>
-                        <TextField type="password"fullWidth margin="normal" size="small" color="primary" variant="outlined"/> */}
-                    </form>
                 </DialogContent>
 
                 <DialogActions>
-                    <Button color="primary" variant="contained">Login</Button>
+                    <Button color="primary" variant="contained">Continue</Button>
                     <Button color="secondary" variant="contained" onClick={handleCloseEvent}>Cancel</Button>
                 </DialogActions>
            </Dialog>

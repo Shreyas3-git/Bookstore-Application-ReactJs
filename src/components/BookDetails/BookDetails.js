@@ -1,11 +1,25 @@
 import React from 'react';
+import {Button} from '@material-ui/core';
+import { BrowserRouter as Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 import '../BookDetails/BookDetails.scss';
 import steveKrug from '../assets/steveKrug.png';
 import HeaderBar from '../AppHeader/headerbar';
 import Footer from '../Footer/Footer';
 
-class BookDetails extends React.Component {
-    render() {
+export default function BookDetails(props) {
+    let history = useHistory();    
+    console.log("BookDetails page ---->",history.location.state);
+    const bookData = history.location.state;
+    const handleClick = () => {
+        this.setState({
+            show: true,
+            btnValue: true,
+
+        });
+    }
+
 
         const array = [
             {
@@ -30,19 +44,21 @@ class BookDetails extends React.Component {
                             <img src={steveKrug} alt='choco' className='cart-det-img'></img>
                         </div>
                         <div className='cart-end'>
-                            <button className='notify'>NOTIFY ME</button>
-                            <button className='wishlist'>WISHLIST</button>
+                            {/* <Button color="primary" variant="contained" component={Link} to="/cart-items">ADD TO BAG</Button> */}
+                            <Button onClick={() => {(history.push("/cart-items",bookData))}} color="primary" variant="contained">ADD TO BAG</Button>
+                            <Button onClick={() => {(history.push("/user-wishlist",bookData))}} color="secondary" variant="contained">WISHLIST</Button>
                         </div>
                     </div>
                     <div className='cart-part2'>
-                        <p className='dummies'>UX FOR DUMMIES</p>
-                        <p className='subheader'>by steve brug</p>
+                        
+                        <p className='dummies'>{bookData.bookName}</p>
+                        <p className='subheader'>{bookData.bookAuthor}</p>
                         <div className='points-1'>
-                            <div className='points'>4.5</div>
+                            <div className='points'>{bookData.bookRating}</div>
                             <p className='subheader2'>(20)</p>
                         </div>
                         <span className='book-cost'>
-                            Rs. 1500 <s className='cut-cost'>Rs. 2000</s>
+                        Rs.{bookData.bookPrice}/- <s className='cut-cost'>Rs.{bookData.priceWithoutDiscount}/-</s>
                         </span>
                         <div className='solid-line'></div>
                         <ul>
@@ -58,7 +74,7 @@ class BookDetails extends React.Component {
               </p>
                         <div className='solid-line2'></div>
                         <p className='dummies2'>Customer Feedback</p>
-                        <p>overall rating</p>
+                        <p className="dummies2">overall rating</p>
                         <textarea
                             placeholder='write your rewview'
                             className='cart-textarea'
@@ -89,6 +105,4 @@ class BookDetails extends React.Component {
         );
     }
 
-}
 
-export default BookDetails;

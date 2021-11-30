@@ -15,7 +15,7 @@ export default function Personaldetails() {
             <HeaderBar />
             <div className="route-link">
                 <a href="/book-list" component={Link} to="/book-list">home</a>
-                <a href="profile" >/profile</a>
+                <a href="/user-details" component={Link} to="/user-details">/profile</a>
             </div>
             <div className="titlename">
                 <label className="person-title">Personal Details</label>
@@ -65,29 +65,30 @@ export default function Personaldetails() {
                     }}>Address</FormLabel>
                 
                 <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
-                      marginLeft: '295px',
+                      marginLeft: '310px',
                       width: '500px' 
                 }}/>
 
                 <div className="adjustColoum">
                     <FormLabel component="legend" style={{
                             paddingBottom:"20px",
+                            marginRight:"105px"
                         }}>City/Town</FormLabel>
                     <div className="textAdjust">
                         <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
-                            marginLeft: '5px',
+                            marginLeft: '-100px',
                             width: '230px',
-                         
+                            paddingTop:"10px"
                         }}/>
                     </div>                    
                     <FormLabel component="legend" style={{
-                        marginLeft: '50px',
-                        paddingBottom:"10px"
+                        marginRight:"140px",
                         }}>State</FormLabel>
                     <div className="textAdjust">
                         <TextField fullWidth margin="normal" size="small" color="primary" variant="outlined" style={{
-                            marginLeft: '20px',
-                            width: '230px' 
+                            marginLeft:  '-70px',
+                            width: '230px',
+                            paddingTop:"10px" 
                         }}/>
                     </div>
                 </div>    

@@ -5,6 +5,7 @@
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    margin-top: 90px;
   }
   .cart-det-img {
     height: 88%;
@@ -39,24 +40,28 @@
   }
   .cart-part2 {
     margin-left: 50px;
+    margin-top: 90px;
   }
   .dummies {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 0px;
+    margin-right: 840px;
   }
   .dummies2 {
     font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
+    margin-right: 880px;
   }
   .cart-button {
-    margin-left: 73%;
+    margin-left: 290px;
     color: #ffffff;
     background-color: rgb(113, 113, 177);
   }
   .cart-textarea {
     display: flex;
+    width: 370px;
   }
   .cart-last-data {
     margin-top: 30px;
@@ -66,6 +71,7 @@
     font-size: 14px;
     font-weight: 400;
     color: rgb(111, 95, 95);
+    margin-right: 950px;
   }
   .subheader2 {
     font-size: 14px;
@@ -123,6 +129,7 @@
     font-size: 14px;
     font-weight: 400;
     color: rgb(111, 95, 95);
+    margin-right: 970px;
   }
   .points {
     width: 35px;
@@ -132,10 +139,16 @@
     color: #ffffff;
     background: rgb(16, 100, 16);
     padding: 5px 0px 5px 5px;
+    margin-left: 20px;
   }
   .points-1 {
     display: flex;
     flex-direction: row;
+    margin-right: 20px;
+  }
+
+  .book-cost {
+    margin-right: 890px;
   }
 
   .aadjust-footer {

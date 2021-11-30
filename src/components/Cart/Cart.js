@@ -1,49 +1,43 @@
-import React from 'react';
+import {React, useState} from 'react';
+import { useHistory } from 'react-router';
 import { ArrowRight } from 'react-bootstrap-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import bookImage from '../assets/bookImage.png';
+import steveKrug from '../assets/steveKrug.png';
 import { Card, Button } from 'react-bootstrap';
 import '../Cart/Cart.scss';
 import AddressDetails from '../CustomerDetails/AddressDetails';
 import HeaderBar from '../AppHeader/headerbar';
-import {BrowserRouter as Link} from 'react-router-dom';
 
-class Newcart extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { value: 1, show: false, btnValue: false, };
 
-    }
-    handleChangeDec = () => {
-        this.setState({
-            value: this.state.value - 1,
-        });
+export default function Newcart(props) {
+
+    let history = useHistory();
+    const [value,setValue] = useState(1);
+    const [show,setShow] = useState(false);
+    const[btnValue,setBtnValue] = useState(false);
+    const bookData = (history.location.state);
+
+    console.log("Data from BookDetails page to Cart page---->",history.location.state);
+
+    const handleChangeDec = () => {
+        setValue(value - 1);
     };
-    handleChangeInc = () => {
-        this.setState({
-            value: this.state.value + 1,
-        });
-    };
-    handleClick = () => {
-        this.setState({
-            show: true,
-            btnValue: true,
 
-        });
+    const handleChangeInc = () => {
+        setValue(value + 1);
+    };
+    
+    const handleClick = () => {
+        setShow(true);
+        setBtnValue(true);
     }
 
 
-    render() {
         return (
-            
+
             <div>
-                <HeaderBar />
-
-            <div className="alignElement">
-                <a href="/book-list" component={Link} to="/book-list">home</a>
-                <a href="/cart-items" component={Link} to="/book-list">/cart</a>
-            </div>
-
+                <HeaderBar /><br/><br/><br/>
+                <h1 className='header'>Home / My cart </h1>
 
                 <Card className='imagestyle cart-style'>
                     <Card.Body>
@@ -57,37 +51,37 @@ class Newcart extends React.Component {
                             </div>
                             <div className='cart-second-body'>
                                 <div className='card-images'>
-                                    <Card.Img src={bookImage} className='ss' />
+                                    <Card.Img src={steveKrug} />
                                 </div>
                                 <div className='cart-details'>
-                                    <span className='book-name'>Dont make me think</span>
-                                    <span className='book-aurthor'>canon doyle</span>
-                                    <span className='book-cost'>
-                                        Rs. 1500 <s className='cut-cost'>Rs. 2000</s>
-                                    </span>
+                                    <div className='book-name'>{bookData.bookName}</div>
+                                    <div className='book-aurthor'>{bookData.bookAuthor}</div>
+                                    <div className='cost-section'>
+                                        Rs. {bookData.bookPrice}/- <span className='cut-cost'>Rs. {bookData.priceWithoutDiscount}/-</span>
+                                    </div>
                                     <div className='book-buttons'>
                                         <span
                                             className='circle minus'
-                                            onClick={this.handleChangeDec}
+                                            onClick={handleChangeDec}
                                         ></span>
-                                        <span className='cart-amount'>{this.state.value}</span>
+                                        <span className='cart-amount'>{value}</span>
                                         <span
                                             className='circle plus'
-                                            onClick={this.handleChangeInc}
+                                            onClick={handleChangeInc}
                                         ></span>
                                     </div>
                                 </div>
                             </div>
                             <div className='place-order'>
-                                {!this.state.btnValue && (
-                                    <Button onClick={this.handleClick} component={Link} to="/order-status">Place Order</Button>
+                                {!btnValue && (
+                                    <Button onClick={handleClick}>Place Order</Button>
                                 )}
                             </div>
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                {this.state.show ? (
-                    <AddressDetails show={this.state.show} />
+                {show ? (
+                    <AddressDetails show={show} />
                 ) : (
                     <>
                         <Card className='imagestyle cart-style2'>
@@ -105,6 +99,3 @@ class Newcart extends React.Component {
             </div>
         );
     }
-}
-
-export default Newcart;

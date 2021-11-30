@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import '../Wishlist/Wishlist.css';
 import bookImage from '../assets/bookImage.png';
 import Card from '@material-ui/core/Card';
@@ -8,8 +7,14 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import HeaderBar from '../AppHeader/headerbar';
 import Footer from '../Footer/Footer';
 import {BrowserRouter as Link} from 'react-router-dom';
+import { useHistory } from 'react-router';
 
-export default function Wishlist() {
+export default function Wishlist(props) {
+    let history = useHistory();
+    const bookData = (history.location.state);
+
+    console.log("wishlist component ---->",bookData);
+
     return (
         <div>
             <HeaderBar />
@@ -24,9 +29,9 @@ export default function Wishlist() {
                     <Card>
                             <CardMedia 
                             style={{
-                                height: "80px",
-                                width : "60px",
-                                marginLeft : "30px",
+                                height: "90px",
+                                width : "70px",
+                                marginLeft :"30px",
                                 marginTop : "35px",
                             }}
                             component="img"
@@ -48,9 +53,9 @@ export default function Wishlist() {
                             <Typography
                             style={{
                                 fontWeight: "bold"           
-                            }}>Don't make me think</Typography>
+                            }}>{bookData.bookName}</Typography>
                             <Typography
-                            style={{color : "grey"}}>by Steve krug</Typography>
+                            style={{color : "grey",marginRight:"40px"}}>{bookData.bookAuthor}</Typography>
                         <div className="style-adjust">    
                             <Typography style={{
                                 color:"black",
@@ -62,7 +67,7 @@ export default function Wishlist() {
                                 justifyContent:"center",
                                 display: "inline"
                                 // marginTop: "-30px"
-                            }}>Rs. 1500/-</Typography>
+                            }}>Rs. {bookData.bookPrice}/-</Typography>
                             <Typography
                             style={{
                                 marginLeft: "8px",
@@ -74,7 +79,7 @@ export default function Wishlist() {
                                 display: "flex",
                                 flexDirection: "row",
                                 justifyContent:"center"
-                                }}>2000/-</Typography>
+                                }}>Rs. {bookData.priceWithoutDiscount}/-</Typography>
                         </div>
                     </CardContent>
 
